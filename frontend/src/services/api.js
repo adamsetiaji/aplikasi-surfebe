@@ -97,19 +97,172 @@ const api = {
   },
 
   addUserToServer: async (serverId, userData) => {
-    const response = await axios.post(`/api/servers/${serverId}/users`, userData);
-    return response.data;
+    // First, get server details to obtain WebSocket URL
+    const serverDetail = await api.getServer(serverId);
+
+    if (!serverDetail?.url) {
+      throw new Error('Server URL not found');
+    }
+
+    return new Promise((resolve, reject) => {
+      try {
+        const ws = new WebSocket(serverDetail.url);
+
+        ws.onopen = () => {
+          // Send the CREATE user message with the required fields
+          ws.send(JSON.stringify({
+            type: "USER",
+            action: "CREATE",
+            data: {
+              name: userData.name,
+              email: userData.email,
+              password_surfebe: userData.password_surfebe
+            }
+          }));
+        };
+
+        ws.onmessage = (event) => {
+          const response = JSON.parse(event.data);
+          ws.close();
+
+          if (response.success) {
+            resolve(response.data);
+          } else {
+            reject(new Error(response.message || 'Failed to add user'));
+          }
+        };
+
+        ws.onerror = (error) => {
+          console.error('WebSocket error:', error);
+          ws.close();
+          reject(error);
+        };
+
+        // Timeout for hanging connections
+        setTimeout(() => {
+          if (ws.readyState !== WebSocket.CLOSED) {
+            ws.close();
+            reject(new Error('WebSocket connection timeout'));
+          }
+        }, 5000);
+
+      } catch (error) {
+        console.error('Error establishing WebSocket connection:', error);
+        reject(error);
+      }
+    });
   },
 
-  updateUserOnServer: async (serverId, userId, userData) => {
-    const response = await axios.put(`/api/servers/${serverId}/users/${userId}`, userData);
-    return response.data;
+  updateUserOnServer: async (serverId, userEmail, userData) => {
+    // First, get server details to obtain WebSocket URL
+    const serverDetail = await api.getServer(serverId);
+    
+    if (!serverDetail?.url) {
+      throw new Error('Server URL not found');
+    }
+    
+    return new Promise((resolve, reject) => {
+      try {
+        const ws = new WebSocket(serverDetail.url);
+        
+        ws.onopen = () => {
+          // Send the UPDATE user message with email and updated data
+          ws.send(JSON.stringify({
+            type: "USER",
+            action: "UPDATE",
+            email: userEmail,
+            data: {
+              name: userData.name,
+              password_surfebe: userData.password_surfebe
+            }
+          }));
+        };
+        
+        ws.onmessage = (event) => {
+          const response = JSON.parse(event.data);
+          ws.close();
+          
+          if (response.success) {
+            resolve(response.data);
+          } else {
+            reject(new Error(response.message || 'Failed to update user'));
+          }
+        };
+        
+        ws.onerror = (error) => {
+          console.error('WebSocket error:', error);
+          ws.close();
+          reject(error);
+        };
+        
+        // Timeout for hanging connections
+        setTimeout(() => {
+          if (ws.readyState !== WebSocket.CLOSED) {
+            ws.close();
+            reject(new Error('WebSocket connection timeout'));
+          }
+        }, 5000);
+        
+      } catch (error) {
+        console.error('Error establishing WebSocket connection:', error);
+        reject(error);
+      }
+    });
   },
 
-  deleteUserFromServer: async (serverId, userId) => {
-    const response = await axios.delete(`/api/servers/${serverId}/users/${userId}`);
-    return response.data;
+  deleteUserFromServer: async (serverId, userEmail) => {
+    // First, get server details to obtain WebSocket URL
+    const serverDetail = await api.getServer(serverId);
+    
+    if (!serverDetail?.url) {
+      throw new Error('Server URL not found');
+    }
+    
+    return new Promise((resolve, reject) => {
+      try {
+        const ws = new WebSocket(serverDetail.url);
+        
+        ws.onopen = () => {
+          // Send the DELETE user message with the email
+          ws.send(JSON.stringify({
+            type: "USER",
+            action: "DELETE",
+            email: userEmail
+          }));
+        };
+        
+        ws.onmessage = (event) => {
+          const response = JSON.parse(event.data);
+          ws.close();
+          
+          if (response.success) {
+            resolve(response.data);
+          } else {
+            reject(new Error(response.message || 'Failed to delete user'));
+          }
+        };
+        
+        ws.onerror = (error) => {
+          console.error('WebSocket error:', error);
+          ws.close();
+          reject(error);
+        };
+        
+        // Timeout for hanging connections
+        setTimeout(() => {
+          if (ws.readyState !== WebSocket.CLOSED) {
+            ws.close();
+            reject(new Error('WebSocket connection timeout'));
+          }
+        }, 5000);
+        
+      } catch (error) {
+        console.error('Error establishing WebSocket connection:', error);
+        reject(error);
+      }
+    });
   }
 };
+
 
 export default api;
