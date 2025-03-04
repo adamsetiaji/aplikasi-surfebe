@@ -1,0 +1,15 @@
+membuat apliaksi desktop menggunakan pywebview, vite+react + websocket
+buatkan file strukturnya dulu
+saya ingin designnya seperti pada contoh file.svg
+
+vite+react taruh di frontend
+pywebview taruh di backend
+
+untuk database backend hanya butuh tabel server saja, karena untuk management usernya itu sudah dari link server yang disimpan
+
+misal, server yang disimpan adalah: ws://localhost:6969
+nah untuk usernya itu mengambil dari ws://localhost:6969 bukan dari backend python
+
+dan tambahkan lagi, jika database sqllite belum ada maka buat databasenya
+
+

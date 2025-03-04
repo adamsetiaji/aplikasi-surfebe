@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f5f7fa"/>
+  
+  <!-- Title -->
+  <text x="50" y="60" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#2c3e50">Navigation Flow: Server Management to User Dashboard</text>
+  
+  <!-- Step 1: Server Management Screen -->
+  <rect x="50" y="100" width="320" height="230" rx="10" fill="white" stroke="#3498db" stroke-width="2"/>
+  <text x="70" y="130" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Step 1: Server Management Screen</text>
+  
+  <!-- Mini Server Table -->
+  <rect x="70" y="150" width="280" height="80" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="75" y="170" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">ID</text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Name</text>
+  <text x="200" y="170" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Actions</text>
+  <line x1="70" y1="175" x2="350" y2="175" stroke="#ddd" stroke-width="1"/>
+  
+  <text x="75" y="195" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">001</text>
+  <text x="100" y="195" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Production Server</text>
+  <rect x="200" y="185" width="70" height="20" rx="3" fill="#3498db"/>
+  <text x="210" y="198" font-family="Arial, sans-serif" font-size="10" fill="white">Dashboard</text>
+  
+  <text x="75" y="220" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">002</text>
+  <text x="100" y="220" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Testing Environment</text>
+  <rect x="200" y="210" width="70" height="20" rx="3" fill="#3498db"/>
+  <text x="210" y="223" font-family="Arial, sans-serif" font-size="10" fill="white">Dashboard</text>
+  
+  <!-- Description -->
+  <text x="70" y="260" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">User views the server list and clicks</text>
+  <text x="70" y="280" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">the "Dashboard" button for a server.</text>
+  <circle cx="235" cy="198" r="10" fill="#e74c3c"/>
+  <text x="231" y="202" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">1</text>
+  
+  <!-- Arrow -->
+  <path d="M380 200 L440 200" stroke="#2c3e50" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 2: Loading/Transition -->
+  <rect x="450" y="100" width="320" height="230" rx="10" fill="white" stroke="#3498db" stroke-width="2"/>
+  <text x="470" y="130" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Step 2: Connection/Authentication</text>
+  
+  <!-- Loading Spinner -->
+  <circle cx="610" cy="200" r="40" fill="none" stroke="#3498db" stroke-width="5" stroke-dasharray="15 10"/>
+  <text x="470" y="260" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">System connects to the selected server</text>
+  <text x="470" y="280" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">URL and authenticates the connection.</text>
+  <circle cx="610" cy="200" r="10" fill="#e74c3c"/>
+  <text x="606" y="204" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">2</text>
+  
+  <!-- Arrow -->
+  <path d="M780 200 L840 200" stroke="#2c3e50" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 3: User Dashboard for the selected server -->
+  <rect x="850" y="100" width="320" height="230" rx="10" fill="white" stroke="#3498db" stroke-width="2"/>
+  <text x="870" y="130" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Step 3: User Dashboard</text>
+  
+  <!-- Mini Dashboard View -->
+  <rect x="870" y="150" width="280" height="100" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <rect x="870" y="150" width="280" height="25" fill="#2c3e50"/>
+  <text x="880" y="167" font-family="Arial, sans-serif" font-size="12" fill="white">Aplikasi ABC v.1.0.0 (https://api.example.com)</text>
+  
+  <text x="875" y="190" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">ID</text>
+  <text x="900" y="190" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Name</text>
+  <text x="980" y="190" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Email</text>
+  <text x="1060" y="190" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Status</text>
+  <line x1="870" y1="195" x2="1150" y2="195" stroke="#ddd" stroke-width="1"/>
+  
+  <text x="875" y="215" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">001</text>
+  <text x="900" y="215" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">John D.</text>
+  <text x="980" y="215" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">john@example.com</text>
+  <rect x="1060" y="205" width="45" height="15" rx="7" fill="#27ae60"/>
+  <text x="1067" y="215" font-family="Arial, sans-serif" font-size="8" fill="white">Active</text>
+  
+  <text x="875" y="235" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">002</text>
+  <text x="900" y="235" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Jane S.</text>
+  <text x="980" y="235" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">jane@example.com</text>
+  <rect x="1060" y="225" width="45" height="15" rx="7" fill="#27ae60"/>
+  <text x="1067" y="235" font-family="Arial, sans-serif" font-size="8" fill="white">Active</text>
+  
+  <text x="870" y="260" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">User dashboard loads showing users from</text>
+  <text x="870" y="280" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">the selected server URL endpoint.</text>
+  <circle cx="1010" cy="215" r="10" fill="#e74c3c"/>
+  <text x="1006" y="219" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">3</text>
+  
+  <!-- Application Flow Overview -->
+  <rect x="50" y="380" width="1120" height="400" rx="10" fill="white" stroke="#3498db" stroke-width="2"/>
+  <text x="70" y="410" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">Complete Application Structure</text>
+  
+  <!-- Server Management Screen -->
+  <rect x="70" y="430" width="340" height="280" rx="5" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="190" y="450" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Server Management</text>
+  
+  <rect x="90" y="470" width="300" height="60" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="100" y="495" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Add Server Form</text>
+  <text x="100" y="515" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">URL, Name, Description, Type</text>
+  
+  <rect x="90" y="550" width="300" height="140" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="100" y="570" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Server List Table</text>
+  
+  <rect x="100" y="585" width="280" height="95" fill="#f5f7fa" stroke="#ddd" stroke-width="1"/>
+  <line x1="100" y1="610" x2="380" y2="610" stroke="#ddd" stroke-width="1"/>
+  <text x="110" y="603" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Name</text>
+  <text x="200" y="603" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">URL</text>
+  <text x="320" y="603" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Actions</text>
+  
+  <text x="110" y="630" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Server 1</text>
+  <text x="200" y="630" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">https://...</text>
+  <rect x="320" y="620" width="50" height="18" rx="3" fill="#3498db"/>
+  <text x="325" y="632" font-family="Arial, sans-serif" font-size="9" fill="white">Dashboard</text>
+  
+  <text x="110" y="650" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Server 2</text>
+  <text x="200" y="650" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">ws://...</text>
+  <rect x="320" y="640" width="50" height="18" rx="3" fill="#3498db"/>
+  <text x="325" y="652" font-family="Arial, sans-serif" font-size="9" fill="white">Dashboard</text>
+  
+  <text x="110" y="670" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Server 3</text>
+  <text x="200" y="670" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">wss://...</text>
+  <rect x="320" y="660" width="50" height="18" rx="3" fill="#3498db"/>
+  <text x="325" y="672" font-family="Arial, sans-serif" font-size="9" fill="white">Dashboard</text>
+  
+  <!-- Arrow from Server Management to User Dashboard -->
+  <path d="M410 570 L450 570" stroke="#2c3e50" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="415" y="555" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">Click "Dashboard"</text>
+  
+  <!-- User Dashboard Screen -->
+  <rect x="450" y="430" width="720" height="280" rx="5" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="750" y="450" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">User Dashboard (Server-Specific)</text>
+  
+  <!-- Server URL indicator -->
+  <rect x="470" y="470" width="680" height="30" fill="#2c3e50"/>
+  <text x="480" y="490" font-family="Arial, sans-serif" font-size="14" fill="white">Aplikasi ABC v.1.0.0 - Connected to: https://api.example.com</text>
+  
+  <!-- Controls in User Dashboard -->
+  <rect x="470" y="510" width="290" height="35" rx="4" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="480" y="533" font-family="Arial, sans-serif" font-size="14" fill="#95a5a6">Search users...</text>
+  
+  <rect x="770" y="510" width="100" height="35" rx="4" fill="#27ae60"/>
+  <text x="785" y="533" font-family="Arial, sans-serif" font-size="14" fill="white">Add User</text>
+  
+  <rect x="880" y="510" width="120" height="35" rx="4" fill="#3498db"/>
+  <text x="895" y="533" font-family="Arial, sans-serif" font-size="14" fill="white">More Actions</text>
+  
+  <!-- User Table -->
+  <rect x="470" y="555" width="400" height="140" fill="white" stroke="#ddd" stroke-width="1"/>
+  
+  <rect x="470" y="555" width="400" height="30" fill="#f5f7fa"/>
+  <line x1="470" y1="585" x2="870" y2="585" stroke="#ddd" stroke-width="1"/>
+  
+  <rect x="482" y="567" width="16" height="16" rx="3" fill="white" stroke="#bdc3c7" stroke-width="1.5"/>
+  <text x="510" y="580" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">ID</text>
+  <text x="550" y="580" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Name</text>
+  <text x="650" y="580" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Email</text>
+  <text x="800" y="580" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Status</text>
+  
+  <!-- Activity Log -->
+  <rect x="880" y="555" width="270" height="140" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="890" y="580" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Activity Log</text>
+  <line x1="880" y1="590" x2="1150" y2="590" stroke="#ddd" stroke-width="1"/>
+  
+  <text x="890" y="610" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">09:45 AM</text>
+  <text x="960" y="610" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">User data updated</text>
+  
+  <text x="890" y="630" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">09:30 AM</text>
+  <text x="960" y="630" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">New user added</text>
+  
+  <text x="890" y="650" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">09:15 AM</text>
+  <text x="960" y="650" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Report generated</text>
+  
+  <text x="890" y="670" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">08:55 AM</text>
+  <text x="960" y="670" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">System backup</text>
+  
+  <!-- Explanation text -->
+  <text x="70" y="730" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Application flow: The user first views the Server Management screen where they can add and manage server connections.</text>
+  <text x="70" y="750" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">When they click the "Dashboard" button for a specific server, the application connects to that server's URL and loads</text>
+  <text x="70" y="770" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">the User Dashboard with data specific to that server. The server URL is displayed in the header for context.</text>
+
+  <!-- Visual Elements -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+</svg>

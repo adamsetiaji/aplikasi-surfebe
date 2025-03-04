@@ -1,0 +1,27 @@
+{
+    "name": "server-dashboard-app",
+    "version": "1.0.0",
+    "description": "Desktop application for server management using PyWebView, React, and WebSockets",
+    "main": "index.js",
+    "scripts": {
+      "install:backend": "pip install -r requirements.txt",
+      "install:frontend": "cd frontend && npm install",
+      "install:all": "npm run install:backend && npm run install:frontend",
+      "start:backend": "python backend/main.py",
+      "start:frontend": "cd frontend && npm run dev",
+      "build:frontend": "cd frontend && npm run build",
+      "dev": "concurrently \"npm run build:frontend\" \"npm run start:backend\" ",
+      "start": "npm run start:backend"
+    },
+    "keywords": [
+      "pywebview",
+      "react",
+      "websocket",
+      "server-management"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+      "concurrently": "^9.1.2"
+    }
+  }

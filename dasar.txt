@@ -1,0 +1,43 @@
+server-dashboard-app/
+├── backend/
+│   ├── api/
+│   │   ├── __init__.py [DONE]
+│   │   ├── server_api.py [DONE]
+│   ├── models/
+│   │   ├── __init__.py [DONE]
+│   │   ├── server.py [DONE]
+│   │   └── activity_log.py [DONE]
+│   ├── services/
+│   │   ├── __init__.py [DONE]
+│   │   ├── server_service.py [DONE]
+│   ├── websocket/
+│   │   ├── __init__.py [DONE]
+│   │   └── socket_handler.py [DONE]
+│   ├── config.py [DONE]
+│   ├── database.py [DONE]
+│   └── main.py [DONE]
+|   frontend/
+|   ├── public/
+|   │   └── favicon.ico
+|   ├── src/
+|   │   ├── components/
+|   │   │   ├── Header.jsx [DONE]
+|   │   │   ├── ServerForm.jsx [DONE]
+|   │   │   ├── ServerList.jsx [DONE]
+|   │   │   ├── ServerDetail.jsx [DONE]
+|   │   │   └── ActivityLog.jsx [DONE]
+|   │   ├── pages/
+|   │   │   ├── HomePage.jsx [DONE]
+|   │   │   └── ServerPage.jsx [DONE]
+|   │   ├── services/
+|   │   │   └── api.js [DONE]
+|   │   ├── App.jsx [DONE]
+|   │   ├── main.jsx [DONE]
+|   │   └── index.css [DONE]
+|   ├── index.html [DONE]
+|   ├── package.json
+|   └── vite.config.js [DONE]
+├── .gitignore
+├── package.json
+├── README.md
+└── requirements.txt

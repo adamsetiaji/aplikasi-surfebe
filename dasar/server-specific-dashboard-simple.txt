@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f5f7fa"/>
+  
+  <!-- Top Bar -->
+  <rect width="1200" height="50" fill="#2c3e50"/>
+  <text x="20" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Aplikasi ABC v.1.0.0</text>
+  
+  <!-- Server Connection Indicator -->
+  <rect x="270" y="12" width="400" height="26" rx="13" fill="#27ae60" opacity="0.9"/>
+  <circle cx="285" cy="25" r="8" fill="white"/>
+  <text x="300" y="30" font-family="Arial, sans-serif" font-size="14" fill="white">Connected to: https://api.example.com (Production Server)</text>
+  
+  <!-- Return to Server List Button -->
+  <rect x="950" y="12" width="180" height="26" rx="13" fill="#34495e"/>
+  <text x="964" y="30" font-family="Arial, sans-serif" font-size="14" fill="white">↩ Back to Server List</text>
+  
+  <!-- Main Container -->
+  <rect x="20" y="70" width="850" height="710" rx="5" fill="white" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Activity Log Panel -->
+  <rect x="890" y="70" width="290" height="710" rx="5" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="910" y="100" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">Activity Log</text>
+  
+  <!-- Server Status Box -->
+  <rect x="910" y="120" width="250" height="100" rx="5" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="925" y="145" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Server Status</text>
+  
+  <rect x="925" y="160" width="12" height="12" rx="6" fill="#27ae60"/>
+  <text x="945" y="170" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Connection: Active</text>
+  
+  <text x="925" y="195" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Last Ping: 12 ms</text>
+  
+  <!-- Activity Log Header -->
+  <rect x="910" y="240" width="250" height="30" rx="3" fill="#f1f5f9"/>
+  <text x="925" y="260" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Time</text>
+  <text x="1020" y="260" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Activity</text>
+  
+  <!-- Activity Log Entries -->
+  <g id="log-entries">
+    <!-- Entry 1 -->
+    <text x="915" y="300" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">09:45 AM</text>
+    <text x="1000" y="300" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">User data updated</text>
+    
+    <!-- Entry 2 -->
+    <text x="915" y="330" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">09:30 AM</text>
+    <text x="1000" y="330" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">New user added</text>
+    
+    <!-- Entry 3 -->
+    <text x="915" y="360" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">09:15 AM</text>
+    <text x="1000" y="360" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Report generated</text>
+  </g>
+  
+  <!-- Server Statistics Box -->
+  <rect x="910" y="400" width="250" height="150" rx="5" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="925" y="425" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Server Statistics</text>
+  
+  <!-- User Stats -->
+  <text x="925" y="455" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Active Users: 137</text>
+  <text x="925" y="485" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Inactive Users: 43</text>
+  <text x="925" y="515" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Pending Users: 15</text>
+  
+  <!-- Table Header and Controls -->
+  <text x="40" y="100" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2c3e50">Users Management</text>
+  <text x="40" y="130" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">Production Server - Total Users: 195</text>
+  
+  <!-- Action Buttons -->
+  <rect x="40" y="150" width="150" height="35" rx="4" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="55" y="173" font-family="Arial, sans-serif" font-size="14" fill="#95a5a6">Search users...</text>
+  
+  <rect x="210" y="150" width="90" height="35" rx="4" fill="#f5f7fa" stroke="#ddd" stroke-width="1"/>
+  <text x="225" y="173" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Columns</text>
+  
+  <rect x="670" y="150" width="90" height="35" rx="4" fill="#27ae60"/>
+  <text x="690" y="173" font-family="Arial, sans-serif" font-size="14" fill="white">Add</text>
+  
+  <rect x="770" y="150" width="90" height="35" rx="4" fill="#3498db"/>
+  <text x="780" y="173" font-family="Arial, sans-serif" font-size="14" fill="white">Actions ▾</text>
+  
+  <!-- Table -->
+  <rect x="40" y="200" width="820" height="500" fill="white" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Table Header -->
+  <rect x="40" y="200" width="820" height="40" fill="#f5f7fa"/>
+  <line x1="40" y1="240" x2="860" y2="240" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Select All Checkbox -->
+  <rect x="52" y="215" width="16" height="16" rx="3" fill="white" stroke="#bdc3c7" stroke-width="1.5"/>
+  
+  <text x="85" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">ID</text>
+  <text x="140" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Name</text>
+  <text x="300" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Email</text>
+  <text x="550" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Role</text>
+  <text x="650" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Status</text>
+  <text x="750" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Actions</text>
+  
+  <!-- Table Rows -->
+  <!-- Row 1 -->
+  <rect x="52" y="260" width="16" height="16" rx="3" fill="white" stroke="#bdc3c7" stroke-width="1.5"/>
+  
+  <text x="85" y="270" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">001</text>
+  <text x="140" y="270" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">John Doe</text>
+  <text x="300" y="270" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">john.doe@example.com</text>
+  <text x="550" y="270" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Admin</text>
+  <rect x="650" y="255" width="60" height="22" rx="11" fill="#27ae60"/>
+  <text x="660" y="270" font-family="Arial, sans-serif" font-size="12" fill="white">Active</text>
+  <rect x="750" y="255" width="30" height="22" rx="3" fill="#3498db"/>
+  <text x="757" y="270" font-family="Arial, sans-serif" font-size="12" fill="white">⋮</text>
+  <line x1="40" y1="285" x2="860" y2="285" stroke="#ecf0f1" stroke-width="1"/>
+  
+  <!-- Row 2 -->
+  <rect x="52" y="300" width="16" height="16" rx="3" fill="white" stroke="#bdc3c7" stroke-width="1.5"/>
+  
+  <text x="85" y="315" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">002</text>
+  <text x="140" y="315" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Jane Smith</text>
+  <text x="300" y="315" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">jane.smith@example.com</text>
+  <text x="550" y="315" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Manager</text>
+  <rect x="650" y="300" width="60" height="22" rx="11" fill="#27ae60"/>
+  <text x="660" y="315" font-family="Arial, sans-serif" font-size="12" fill="white">Active</text>
+  <rect x="750" y="300" width="30" height="22" rx="3" fill="#3498db"/>
+  <text x="757" y="315" font-family="Arial, sans-serif" font-size="12" fill="white">⋮</text>
+  <line x1="40" y1="330" x2="860" y2="330" stroke="#ecf0f1" stroke-width="1"/>
+  
+  <!-- Row 3 -->
+  <rect x="52" y="345" width="16" height="16" rx="3" fill="white" stroke="#bdc3c7" stroke-width="1.5"/>
+  
+  <text x="85" y="360" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">003</text>
+  <text x="140" y="360" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Robert Johnson</text>
+  <text x="300" y="360" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">robert.j@example.com</text>
+  <text x="550" y="360" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">User</text>
+  <rect x="650" y="345" width="80" height="22" rx="11" fill="#e74c3c"/>
+  <text x="660" y="360" font-family="Arial, sans-serif" font-size="12" fill="white">Inactive</text>
+  <rect x="750" y="345" width="30" height="22" rx="3" fill="#3498db"/>
+  <text x="757" y="360" font-family="Arial, sans-serif" font-size="12" fill="white">⋮</text>
+  <line x1="40" y1="375" x2="860" y2="375" stroke="#ecf0f1" stroke-width="1"/>
+  
+  <!-- Row 4 -->
+  <rect x="52" y="390" width="16" height="16" rx="3" fill="white" stroke="#bdc3c7" stroke-width="1.5"/>
+  
+  <text x="85" y="405" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">004</text>
+  <text x="140" y="405" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Maria Garcia</text>
+  <text x="300" y="405" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">maria.g@example.com</text>
+  <text x="550" y="405" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">User</text>
+  <rect x="650" y="390" width="60" height="22" rx="11" fill="#27ae60"/>
+  <text x="660" y="405" font-family="Arial, sans-serif" font-size="12" fill="white">Active</text>
+  <rect x="750" y="390" width="30" height="22" rx="3" fill="#3498db"/>
+  <text x="757" y="405" font-family="Arial, sans-serif" font-size="12" fill="white">⋮</text>
+  <line x1="40" y1="420" x2="860" y2="420" stroke="#ecf0f1" stroke-width="1"/>
+  
+  <!-- Row 5 -->
+  <rect x="52" y="435" width="16" height="16" rx="3" fill="white" stroke="#bdc3c7" stroke-width="1.5"/>
+  
+  <text x="85" y="450" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">005</text>
+  <text x="140" y="450" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">David Lee</text>
+  <text x="300" y="450" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">david.lee@example.com</text>
+  <text x="550" y="450" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Editor</text>
+  <rect x="650" y="435" width="60" height="22" rx="11" fill="#27ae60"/>
+  <text x="660" y="450" font-family="Arial, sans-serif" font-size="12" fill="white">Active</text>
+  <rect x="750" y="435" width="30" height="22" rx="3" fill="#3498db"/>
+  <text x="757" y="450" font-family="Arial, sans-serif" font-size="12" fill="white">⋮</text>
+  <line x1="40" y1="465" x2="860" y2="465" stroke="#ecf0f1" stroke-width="1"/>
+  
+  <!-- Row 6 -->
+  <rect x="52" y="480" width="16" height="16" rx="3" fill="white" stroke="#bdc3c7" stroke-width="1.5"/>
+  
+  <text x="85" y="495" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">006</text>
+  <text x="140" y="495" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Lisa Wang</text>
+  <text x="300" y="495" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">lisa.w@example.com</text>
+  <text x="550" y="495" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">User</text>
+  <rect x="650" y="480" width="80" height="22" rx="11" fill="#f39c12"/>
+  <text x="660" y="495" font-family="Arial, sans-serif" font-size="12" fill="white">Pending</text>
+  <rect x="750" y="480" width="30" height="22" rx="3" fill="#3498db"/>
+  <text x="757" y="495" font-family="Arial, sans-serif" font-size="12" fill="white">⋮</text>
+  <line x1="40" y1="510" x2="860" y2="510" stroke="#ecf0f1" stroke-width="1"/>
+  
+  <!-- Pagination -->
+  <rect x="350" y="710" width="200" height="40" fill="white"/>
+  
+  <rect x="390" y="715" width="30" height="30" rx="3" fill="#3498db"/>
+  <text x="397" y="735" font-family="Arial, sans-serif" font-size="14" fill="white">1</text>
+  
+  <rect x="430" y="715" width="30" height="30" rx="3" fill="#f5f7fa" stroke="#ddd" stroke-width="1"/>
+  <text x="437" y="735" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">2</text>
+  
+  <rect x="470" y="715" width="30" height="30" rx="3" fill="#f5f7fa" stroke="#ddd" stroke-width="1"/>
+  <text x="477" y="735" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d">3</text>
+  
+  <!-- Actions Dropdown Menu -->
+  <g id="actions-dropdown" opacity="0.95">
+    <rect x="780" y="185" width="170" height="195" rx="5" fill="white" stroke="#ddd" stroke-width="1" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))"/>
+    
+    <rect x="790" y="195" width="150" height="30" rx="3" fill="white"/>
+    <text x="800" y="215" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Refresh Data</text>
+    
+    <rect x="790" y="230" width="150" height="30" rx="3" fill="white"/>
+    <text x="800" y="250" font-family="Arial, sans-serif" font-size="14" fill="#e74c3c">Delete Selected</text>
+    
+    <line x1="790" y1="265" x2="940" y2="265" stroke="#ddd" stroke-width="1"/>
+    
+    <rect x="790" y="270" width="150" height="30" rx="3" fill="white"/>
+    <text x="800" y="290" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Run Selected</text>
+    
+    <rect x="790" y="305" width="150" height="30" rx="3" fill="white"/>
+    <text x="800" y="325" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Stop Selected</text>
+    
+    <rect x="790" y="340" width="150" height="30" rx="3" fill="white"/>
+    <text x="800" y="360" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Refresh Token</text>
+  </g>
+  
+  <!-- Visual Elements -->
+  <defs>
+    <linearGradient id="header-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="0" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
